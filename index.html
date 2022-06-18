@@ -158,6 +158,165 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Docker启动tomcat成功，访问显示404问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/06/19/Docker%E5%90%AF%E5%8A%A8tomcat%E6%88%90%E5%8A%9F%EF%BC%8C%E8%AE%BF%E9%97%AE%E6%98%BE%E7%A4%BA404%E9%97%AE%E9%A2%98/">Docker启动tomcat成功，访问显示404问题</a>
+    </h1>
+  
+
+        
+        <a href="/2022/06/19/Docker%E5%90%AF%E5%8A%A8tomcat%E6%88%90%E5%8A%9F%EF%BC%8C%E8%AE%BF%E9%97%AE%E6%98%BE%E7%A4%BA404%E9%97%AE%E9%A2%98/" class="archive-article-date">
+  	<time datetime="2022-06-18T20:10:46.022Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-06-19</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="第一步：进入tomcat目录"><a href="#第一步：进入tomcat目录" class="headerlink" title="第一步：进入tomcat目录"></a>第一步：进入tomcat目录</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker exec -it (启动的Tomcat容器的容器id) /bin/bash</span><br></pre></td></tr></table></figure>
+
+<h4 id="第二步：进入webapps目录"><a href="#第二步：进入webapps目录" class="headerlink" title="第二步：进入webapps目录"></a>第二步：进入webapps目录</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd webapps</span><br></pre></td></tr></table></figure>
+        
+          <a class="article-more-a" href="/2022/06/19/Docker%E5%90%AF%E5%8A%A8tomcat%E6%88%90%E5%8A%9F%EF%BC%8C%E8%AE%BF%E9%97%AE%E6%98%BE%E7%A4%BA404%E9%97%AE%E9%A2%98/#more">还有内容哦 >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Docker</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Tomcat</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2022/06/19/Docker%E5%90%AF%E5%8A%A8tomcat%E6%88%90%E5%8A%9F%EF%BC%8C%E8%AE%BF%E9%97%AE%E6%98%BE%E7%A4%BA404%E9%97%AE%E9%A2%98/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Docker启动失败问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/06/19/Docker%E5%90%AF%E5%8A%A8%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98/">Docker启动失败问题</a>
+    </h1>
+  
+
+        
+        <a href="/2022/06/19/Docker%E5%90%AF%E5%8A%A8%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98/" class="archive-article-date">
+  	<time datetime="2022-06-18T20:04:06.295Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-06-19</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在安装完<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=docker&spm=1001.2101.3001.7020">docker</a>以后，当输入命令docker run 一个容器时</p>
+<h4 id="报错信息："><a href="#报错信息：" class="headerlink" title="报错信息："></a>报错信息：</h4><p>container_linux.go:235: starting container process caused “process_linux.go:258: applying cgroup configuration for process caused “Cannot set property TasksAccounting, or unknown property.””<br>&#x2F;usr&#x2F;bin&#x2F;docker-current: Error response from daemon: oci runtime error: container_linux.go:235: starting container process caused “process_linux.go:258: applying cgroup configuration for process caused “Cannot set property TasksAccounting, or unknown prop</p>
+        
+          <a class="article-more-a" href="/2022/06/19/Docker%E5%90%AF%E5%8A%A8%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98/#more">还有内容哦 >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Docker</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2022/06/19/Docker%E5%90%AF%E5%8A%A8%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-我的第一篇博客文章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -178,7 +337,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>你好，MyBlog。</p>
+
       
 
       
@@ -191,7 +351,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">第一篇博客666</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">第一篇博客</a>
         		</li>
       		
 		</ul>
@@ -255,16 +415,9 @@
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
+        
+          <a class="article-more-a" href="/2022/06/17/hello-world/#more">还有内容哦 >></a>
+        
       
 
       
@@ -272,6 +425,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Hexo</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -399,7 +563,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">第一篇博客666</a>
+                <a href="javascript:void(0)" class="js-tag color2">Docker</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">第一篇博客</a>
               </li>
             
             <div class="clearfix"></div>

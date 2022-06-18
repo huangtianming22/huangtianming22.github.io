@@ -6,19 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Hello World | 小明同学的博客</title>
+  <title>Docker启动tomcat成功，访问显示404问题 | 小明同学的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="第一步：进入tomcat目录1docker exec -it (启动的Tomcat容器的容器id) &#x2F;bin&#x2F;bash  第二步：进入webapps目录1cd webapps">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2022/06/17/hello-world/index.html">
+<meta property="og:title" content="Docker启动tomcat成功，访问显示404问题">
+<meta property="og:url" content="http://example.com/2022/06/19/Docker%E5%90%AF%E5%8A%A8tomcat%E6%88%90%E5%8A%9F%EF%BC%8C%E8%AE%BF%E9%97%AE%E6%98%BE%E7%A4%BA404%E9%97%AE%E9%A2%98/index.html">
 <meta property="og:site_name" content="小明同学的博客">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="第一步：进入tomcat目录1docker exec -it (启动的Tomcat容器的容器id) &#x2F;bin&#x2F;bash  第二步：进入webapps目录1cd webapps">
 <meta property="og:locale" content="zh_CH">
-<meta property="article:published_time" content="2022-06-17T15:50:02.783Z">
-<meta property="article:modified_time" content="2022-06-18T20:24:39.686Z">
+<meta property="article:published_time" content="2022-06-18T20:10:46.022Z">
+<meta property="article:modified_time" content="2022-06-18T20:24:10.756Z">
 <meta property="article:author" content="Timmy">
-<meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="Docker">
+<meta property="article:tag" content="Tomcat">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="小明同学的博客" type="application/atom+xml">
@@ -159,41 +160,42 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Docker启动tomcat成功，访问显示404问题" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      Docker启动tomcat成功，访问显示404问题
     </h1>
   
 
         
-        <a href="/2022/06/17/hello-world/" class="archive-article-date">
-  	<time datetime="2022-06-17T15:50:02.783Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-06-17</time>
+        <a href="/2022/06/19/Docker%E5%90%AF%E5%8A%A8tomcat%E6%88%90%E5%8A%9F%EF%BC%8C%E8%AE%BF%E9%97%AE%E6%98%BE%E7%A4%BA404%E9%97%AE%E9%A2%98/" class="archive-article-date">
+  	<time datetime="2022-06-18T20:10:46.022Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-06-19</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+        <h4 id="第一步：进入tomcat目录"><a href="#第一步：进入tomcat目录" class="headerlink" title="第一步：进入tomcat目录"></a>第一步：进入tomcat目录</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker exec -it (启动的Tomcat容器的容器id) /bin/bash</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h4 id="第二步：进入webapps目录"><a href="#第二步：进入webapps目录" class="headerlink" title="第二步：进入webapps目录"></a>第二步：进入webapps目录</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd webapps</span><br></pre></td></tr></table></figure>
+
 <span id="more"></span>
 
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h4 id="第三步：查看webapps下的文件"><a href="#第三步：查看webapps下的文件" class="headerlink" title="第三步：查看webapps下的文件"></a>第三步：查看webapps下的文件</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls -l</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>如果显示total 0，这就是问题所在，webapps文件夹下没有东西</p>
+<h4 id="第四步：返回上一级目录"><a href="#第四步：返回上一级目录" class="headerlink" title="第四步：返回上一级目录"></a>第四步：返回上一级目录</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">../</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<h4 id="第五步：删除webapps文件夹"><a href="#第五步：删除webapps文件夹" class="headerlink" title="第五步：删除webapps文件夹"></a>第五步：删除webapps文件夹</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm -rf webapps</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h4 id="第六步：将webapps-dist文件夹下的内容复制到给webapps文件夹"><a href="#第六步：将webapps-dist文件夹下的内容复制到给webapps文件夹" class="headerlink" title="第六步：将webapps.dist文件夹下的内容复制到给webapps文件夹"></a>第六步：将webapps.dist文件夹下的内容复制到给webapps文件夹</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv webapps.dist webapps</span><br></pre></td></tr></table></figure>
+
+<p>最后再次访问tomcat即可解决问题</p>
 
       
 
@@ -228,7 +230,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Hexo</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Docker</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Tomcat</a>
         		</li>
       		
 		</ul>
@@ -284,7 +290,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2022/06/17/hello-world/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2022/06/19/Docker%E5%90%AF%E5%8A%A8tomcat%E6%88%90%E5%8A%9F%EF%BC%8C%E8%AE%BF%E9%97%AE%E6%98%BE%E7%A4%BA404%E9%97%AE%E9%A2%98/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -298,15 +304,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2022/06/17/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          我的第一篇博客文章
-        
-      </div>
-    </a>
   
+    <a href="/2022/06/19/Docker%E5%90%AF%E5%8A%A8%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Docker启动失败问题</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
@@ -331,7 +333,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E6%AD%A5%EF%BC%9A%E8%BF%9B%E5%85%A5tomcat%E7%9B%AE%E5%BD%95"><span class="toc-number">1.</span> <span class="toc-text">第一步：进入tomcat目录</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5%EF%BC%9A%E8%BF%9B%E5%85%A5webapps%E7%9B%AE%E5%BD%95"><span class="toc-number">2.</span> <span class="toc-text">第二步：进入webapps目录</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E6%AD%A5%EF%BC%9A%E6%9F%A5%E7%9C%8Bwebapps%E4%B8%8B%E7%9A%84%E6%96%87%E4%BB%B6"><span class="toc-number">3.</span> <span class="toc-text">第三步：查看webapps下的文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E6%AD%A5%EF%BC%9A%E8%BF%94%E5%9B%9E%E4%B8%8A%E4%B8%80%E7%BA%A7%E7%9B%AE%E5%BD%95"><span class="toc-number">4.</span> <span class="toc-text">第四步：返回上一级目录</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E6%AD%A5%EF%BC%9A%E5%88%A0%E9%99%A4webapps%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="toc-number">5.</span> <span class="toc-text">第五步：删除webapps文件夹</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%AC%E5%85%AD%E6%AD%A5%EF%BC%9A%E5%B0%86webapps-dist%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8B%E7%9A%84%E5%86%85%E5%AE%B9%E5%A4%8D%E5%88%B6%E5%88%B0%E7%BB%99webapps%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="toc-number">6.</span> <span class="toc-text">第六步：将webapps.dist文件夹下的内容复制到给webapps文件夹</span></a></li></ol>
                     </div>
                 </span>
             </div>
